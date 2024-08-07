@@ -1,0 +1,64 @@
+body {
+  font-family: 'Geomotos Neue', sans-serif;
+  background-color: #FFE3B7;
+  color: #124156;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #F5BA2D;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 500px;
+}
+
+h1 {
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+input, select {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #798D8D;
+  border-radius: 4px;
+  font-weight: 200;
+}
+
+small {
+  display: block;
+  margin-top: 5px;
+  color: #798D8D;
+}
+
+button {
+  background-color: #124156;
+  color: #FFE3B7;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0A2D3E;
+}
