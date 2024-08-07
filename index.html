@@ -11,62 +11,57 @@
 </head>
 <body>
   <div class="container">
-    <h1>Movement for Change</h1>
-    <form action="/post" method="post" id="campaignForm">
-        <div class="form-group">
-            <label for="surname">Surname:</label>
-            <input type="text" id="surname" name="surname" required>
-        </div>
-        <div class="form-group">
-            <label for="firstName">First Name (Other):</label>
-            <input type="text" id="firstName" name="firstName" required>
-            <small>***As it appears on your voter ID card</small>
-        </div>
-        <div class="form-group">
-          <label for="contact">Contact:</label>
-          <input type="text" id="contact" name="contact" required>
-          <small>*** Please enter your 10 digit phone number (eg 0204567890)</small>
-      </div>
-        <div class="form-group">
-            <label for="voterId">Voter ID:</label>
-            <input type="text" id="voterId" name="voterId" required>
-        </div>
-        <div class="form-group">
-            <label for="pollingStationName">Polling Station Name:</label>
-            <input type="text" id="pollingStationName" name="pollingStationName" required>
-        </div>
-        <div class="form-group">
-            <label for="pollingStationCode">Polling Station Code:</label>
-            <input type="text" id="pollingStationCode" name="pollingStationCode" required>
-            <small>***As it appears on your voter ID card eg(A123456)</small>
-          </div>
-          <div class="form-group">
-            <label for="occupation">Occupation:</label>
-            <input type="text" id="occupation" name="occupation" required>
-        </div>
-        <div class="form-group">
-            <label for="region">Region:</label>
-            <select id="region" name="region" required>
-                <option value="" disabled selected>Select your region</option>
-                <option value="Ahafo">Ahafo</option>
-                <option value="Ashanti">Ashanti</option>
-                <option value="Bono">Bono</option>
-                <option value="Bono East">Bono East</option>
-                <option value="Central">Central</option>
-                <option value="Eastern">Eastern</option>
-                <option value="Greater Accra">Greater Accra</option>
-                <option value="Northeast">Northeast</option>
-                <option value="Northern">Northern</option>
-                <option value="Oti">Oti</option>
-                <option value="Savannah">Savannah</option>
-                <option value="Upper East">Upper East</option>
-                <option value="Upper West">Upper West</option>
-                <option value="Volta">Volta</option>
-                <option value="Western">Western</option>
-                <option value="Western North">Western North</option>
-            </select>
-        </div>
-        <button type="submit">Submit</button>
+    <h1>MOVEMENT FOR CHANGE</h1>
+    <form action="/post" method="post">
+        <label for="surname">Surname: <small>as it appears on your voter ID card</small></label>
+        <input type="text" id="surname" name="surname" required>
+
+        <label for="firstName">First Name (Other): <small>as it appears on your voter ID card</small></label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <label for="contact">Contact: <small>eg 020-123-4567</small></label>
+        <input type="text" id="contact" name="contact" required>
+
+        <label for="voterId">Voter ID:</label>
+        <input type="text" id="voterId" name="voterId" required>
+
+        <label for="pollingStationName">Polling Station Name:</label>
+        <input type="text" id="pollingStationName" name="pollingStationName" required>
+
+        <label for="pollingStationCode">Polling Station Code:</label>
+        <input type="text" id="pollingStationCode" name="pollingStationCode" required>
+
+        <label for="occupation">Occupation:</label>
+        <input type="text" id="occupation" name="occupation" required>
+
+        <label for="region">Region:</label>
+        <select id="region" name="region" required>
+            <option value="">Select Region</option>
+            <option value="AHAFO">AHAFO</option>
+            <option value="ASHANTI">ASHANTI</option>
+            <option value="BONO">BONO</option>
+            <option value="BONO EAST">BONO EAST</option>
+            <option value="CENTRAL">CENTRAL</option>
+            <option value="EASTERN">EASTERN</option>
+            <option value="GREATER ACCRA">GREATER ACCRA</option>
+            <option value="NORTH EAST">NORTH EAST</option>
+            <option value="NORTHERN">NORTHERN</option>
+            <option value="OTI">OTI</option>
+            <option value="SAVANNAH">SAVANNAH</option>
+            <option value="UPPER EAST">UPPER EAST</option>
+            <option value="UPPER WEST">UPPER WEST</option>
+            <option value="VOLTA">VOLTA</option>
+            <option value="WESTERN">WESTERN</option>
+            <option value="WESTERN NORTH">WESTERN NORTH</option>
+        </select>
+
+        <label for="district">District:</label>
+        <select id="district" name="district" required>
+            <option value="">Select District</option>
+            <!-- District options will be dynamically populated based on selected region -->
+        </select>
+
+        <button type="submit">SUBMIT</button>
     </form>
 </div>
 

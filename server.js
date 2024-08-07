@@ -1,7 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const path = require('path');
-const port = 4500;
+const port = 4019;
 
 const app = express();
 app.use(express.static(__dirname));
@@ -24,7 +24,8 @@ const userSchema = new mongoose.Schema({
   pollingStationName: String,
   pollingStationCode: String,
   occupation: String,
-  region: String
+  region: String,
+  district: String
 });
 
 const users = mongoose.model('guarantor', userSchema);
@@ -34,7 +35,7 @@ app.get('/', (req, res)=>{
 });
 
 app.post('/post', async(rep, res)=>{
-  const {surname, firstName, contact, voterID, pollingStationName, pollingStationCode, occupation, region} = rep.body;
+  const {surname, firstName, contact, voterID, pollingStationName, pollingStationCode, occupation, region, district} = rep.body;
   const user = new users({
     surname,
     firstName,
@@ -43,7 +44,8 @@ app.post('/post', async(rep, res)=>{
     pollingStationName,
     pollingStationCode,
     occupation,
-    region
+    region,
+    district
   });
 
   await user.save();
